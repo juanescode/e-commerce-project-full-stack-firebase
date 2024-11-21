@@ -69,7 +69,9 @@ export default function Sidebar() {
   return (
     <section className="sticky top-0 flex flex-col gap-10 h-screen px-5 py-3 overflow-hidden bg-white border-r w-[260px] z-50 ">
       <div className="flex justify-center py-4">
-        <img className="h-8" src="/logo.png" alt="" />
+        <Link href={`/`}>
+          <img className="h-8" src="/logo.png" alt="" />
+        </Link>
       </div>
       <ul className="flex flex-col flex-1 h-full gap-4 overflow-y-auto">
         {menuList?.map((item, key) => {
